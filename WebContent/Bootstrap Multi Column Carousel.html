@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+  .carousel.slide img {
+    width:100%;
+    height:auto;
+}
+  </style>
+  
+</head>
+
+<body>
+<div id="carousel-example-generic" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+       <!-- Slide -->
+    <div class="item active">
+        <div class="row">
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/desert.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+         <div class="row">
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/desert.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+         <div class="row">
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/desert.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <img src="image/jellyfish.jpg" alt=""/>
+                <div class="carousel-caption">This is a caption</div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+     <script src="bootstrap/js/bootstrap.min.js"></script> 
+     <script type="text/javascript">
+			$(document).ready(function(){
+				$('#carousel-example-generic').carousel({wrap:true});
+			});
+			</script> 	
+</body>	
+</html>		

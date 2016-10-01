@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Desert</a></li>
+        <li><a href="#section2">Lighthouse</a></li>
+        <li><a href="#section3">Tulip</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Animals <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Jellyfish</a></li>
+            <li><a href="#section42">Penguin</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
+      <div id="section2">
+        <h1>Lighthouse</h1>
+        <img class="img-responsive"  src="image/lighthouse.jpg" alt="penguins"/>
+      </div>
+      <div id="section3">
+		
+      </div>
+      <div id="section41">
+		
+      </div>
+      <div id="section42">
+		
+      </div>
+    </div>
+  </div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html>

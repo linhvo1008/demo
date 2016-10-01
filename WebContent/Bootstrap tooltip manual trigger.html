@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<br/>
+	<div class="col-xs-6">
+		<br/><br/>
+		Name: <input type="text" id="txtName" title="Bootstrap tooltip" data-toggle="tooltip"/>
+		<span class="glyphicon glyphicon-info-sign" id ="infoIcon"></span>
+		
+	</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('#txtName').tooltip({
+			trigger:'click'
+		});
+		$('#infoIcon').click(function(){
+			$('#txtName').tooltip('toggle');
+		});
+			
+			
+	});
+</script>	
+</body>
+</html>

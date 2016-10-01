@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+...
+  <ul class="nav navbar-nav">
+    <li><a href="#section1">Desert</a></li>
+    <li><a href="#section2">Lighthouse</a></li>
+    <li><a href="#section3">Tulip</a></li>
+    <li class="dropdown" >
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+				Animals <b class="caret"></b>
+				 </a>
+				 <ul class ="dropdown-menu">
+				 	<li>
+				 		<a href ="#Jellyfish" data-toggle="tab">Jellyfish</a>
+				 	</li>
+				 	<li>
+				 		<a href ="#Penguin" data-toggle="tab">Penguin</a>
+				 	</li>
+				 </ul>	 
+	</li>
+   </ul>
+</nav>
+
+	<div id="section1">
+		<br/>
+	</div>
+	<div id="section2">
+		<br/>
+	</div>
+	<div id="section3">
+		<br/>
+	</div>
+	<div id="Jellyfish" class="tab-pane ">
+			<br/>
+		</div>
+	<div id="Penguin" class="tab-pane ">
+		<img class="img-responsive"  src="image/penguin.jpg" alt="penguins"/>
+	</div>
+
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+
+	
+</body>
+</html>

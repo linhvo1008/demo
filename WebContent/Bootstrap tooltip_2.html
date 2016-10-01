@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<br/>
+	<div class="col-xs-12">
+		<br/><br/>
+		<button class="btn btn-primary" title="Bootstrap tooltip" data-toggle="tooltip">Button</button>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip({
+			placement:'right',
+			title:"<h3>Help</h3><p>Click to submit this page </p>",
+			animation: true,
+			delay: {show:300, hide:500},
+			html: true			
+		});
+	});
+</script>	
+</body>
+</html>
